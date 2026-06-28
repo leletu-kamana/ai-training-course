@@ -1,0 +1,67 @@
+/* Dashboard header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dashboard-header .logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.dashboard-header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Sidebar / main layout */
+.app-layout {
+  display: flex;
+  min-height: calc(100vh - 70px);
+}
+
+.app-sidebar {
+  width: 220px;
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+
+.app-sidebar a {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  color: var(--text-primary);
+}
+.app-sidebar a:hover {
+  background-color: var(--border-color);
+  text-decoration: none;
+}
+.app-sidebar a.active {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.app-content {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+/* Notes list */
+.note-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 0;
+}
+.note-item:last-child {
+  border-bottom: none;
+}
+.note-item .note-title {
+  font-weight: 600;
+}
+.note-item .note-date {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
