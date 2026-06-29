@@ -1,33 +1,42 @@
-# My GitHub Pages Project
+# AI Ethics & Literacy Course
 
-## Overview
-This is a single‑page application (SPA‑like) built with vanilla HTML, CSS, and JavaScript.  
-It demonstrates:
-- User authentication (mock) using `localStorage`
-- A clean, responsive UI with dark mode support
-- Modular JavaScript (separate files for API, auth, utilities)
-- GitHub Pages deployment
+A free, open-source course teaching high school and tertiary students how to use AI tools
+ethically — covering plagiarism, academic integrity, AI disclosure policies, and proper
+citation of AI assistance.
 
-## Setup
-1. Clone this repository.
-2. Open `index.html` in your browser.
-3. No build tools needed – it runs straight from the file system.
+## Structure
 
-## Features
-- Login / Signup (data stored in `localStorage`)
-- Dashboard with a welcome message
-- Notes page (CRUD operations using mock data)
-- Profile page (view / edit user info)
-- Dark/light mode toggle (auto‑detects system preference)
+```
+.
+├── assets/
+│   ├── css/style.css       Site-wide styles (plain CSS, no framework)
+│   ├── img/                 Images
+│   └── js/
+│       ├── nav.js           Shared navbar + footer, builds correct links for current depth
+│       ├── progress.js      localStorage-based progress tracker
+│       ├── quiz.js          Self-check quiz logic
+│       ├── citation-tool.js Interactive citation style switcher
+│       └── checker.js       Self-Check writing tool logic
+├── pages/
+│   ├── about.html
+│   ├── checker.html         Interactive self-check tool
+│   ├── citation-guide.html
+│   ├── examples.html
+│   ├── modules.html         5 course modules
+│   ├── quiz.html
+│   └── resources.html
+├── seo/
+│   ├── robots.txt
+│   └── sitemap.xml
+├── .nojekyll
+└── index.html
+```
 
-## File Structure
-See the project tree in the root folder.
+## Running locally
 
-## Lecturer Notes
-- All mock data is in `/data/mock-notes.json` (temporary).
-- The `api.js` file abstracts all data operations – switching to a real backend only requires changing that file.
-- CSS variables are used for theming; dark mode is fully supported.
+No build step needed. Open `index.html` in a browser, or serve the folder with any
+static file server (e.g. `python3 -m http.server`) from the project root.
 
 ## Deployment
-This project is deployed on GitHub Pages.  
-Simply push to the `main` branch and enable Pages in the repository settings.
+
+Hosted via GitHub Pages from the `main` branch root.
