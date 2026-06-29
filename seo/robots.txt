@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leletu-kamana.github.io/ai-training-course.github.io/seo/sitemap.xml
