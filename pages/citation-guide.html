@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citation Guide — AI Ethics &amp; Literacy Course</title>
+  <meta name="description" content="How to cite AI assistance in APA, Harvard, and MLA referencing styles.">
+  <link rel="canonical" href="https://leletu-kamana.github.io/ai-training-course.github.io/pages/citation-guide.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link font-mono">Skip to main content</a>
+
+  <header class="site-header">
+    <div id="siteNav" class="nav-bar"></div>
+  </header>
+
+  <main id="main" class="wrap" style="padding-top:48px; padding-bottom:64px;">
+    <span class="eyebrow">Reference correctly</span>
+    <h1 class="font-display mb-2" style="font-size:2.4rem;">Citing AI assistance</h1>
+    <p class="muted mb-3" style="max-width:600px;">Always check your institution's specific requirement first — these are general templates based on each style's official guidance, current as of 2025–2026. Verify against your style guide's official site if precision matters for grading.</p>
+
+    <div class="margin-note mb-4" style="max-width:600px;">
+      <p class="tag">Before you cite anything</p>
+      <p class="text-sm mt-1">Confirm AI use is permitted for this specific task. A correct citation doesn't make disallowed AI use acceptable.</p>
+    </div>
+
+    <!-- Interactive style picker -->
+    <div class="card mb-4">
+      <p class="tag mb-2">Pick your referencing style</p>
+      <div id="styleTabs" style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
+        <button class="btn btn-outline style-tab" data-style="apa">APA (7th)</button>
+        <button class="btn btn-outline style-tab" data-style="harvard">Harvard</button>
+        <button class="btn btn-outline style-tab" data-style="mla">MLA (9th)</button>
+      </div>
+      <div id="styleOutput"></div>
+    </div>
+
+    <h2 class="font-display mt-4 mb-2" style="font-size:1.4rem;">All three styles, side by side</h2>
+    <div>
+      <div class="card mb-2">
+        <h3 class="font-display mb-2" style="font-size:1.1rem;">APA (7th edition)</h3>
+        <p class="text-sm muted mb-2">APA treats AI output as a non-retrievable source — similar to citing a personal communication, but with a reference list entry since the content is reproducible by you.</p>
+        <div style="background:var(--paper-dim); padding:14px; border-radius:2px; font-family:'JetBrains Mono', monospace; font-size:0.8rem; line-height:1.6; overflow-x:auto;">
+          <p class="muted-light mb-1">In-text:</p>
+          <p class="mb-2">(OpenAI, 2026)</p>
+          <p class="muted-light mb-1">Reference list:</p>
+          <p>OpenAI. (2026). <em>ChatGPT</em> (Mar 2026 version) [Large language model]. https://chat.openai.com</p>
+        </div>
+      </div>
+
+      <div class="card mb-2">
+        <h3 class="font-display mb-2" style="font-size:1.1rem;">Harvard</h3>
+        <p class="text-sm muted mb-2">Harvard style (used widely in South African and UK institutions) typically cites the AI tool as the "author" with the year and access details.</p>
+        <div style="background:var(--paper-dim); padding:14px; border-radius:2px; font-family:'JetBrains Mono', monospace; font-size:0.8rem; line-height:1.6; overflow-x:auto;">
+          <p class="muted-light mb-1">In-text:</p>
+          <p class="mb-2">(Claude, Anthropic 2026)</p>
+          <p class="muted-light mb-1">Reference list:</p>
+          <p>Anthropic (2026) <em>Claude</em> [Large language model]. Available at: https://claude.ai (Accessed: 28 June 2026).</p>
+        </div>
+      </div>
+
+      <div class="card mb-2">
+        <h3 class="font-display mb-2" style="font-size:1.1rem;">MLA (9th edition)</h3>
+        <p class="text-sm muted mb-2">MLA recommends describing the prompt used and treating the AI tool as a container/publisher in the works-cited entry.</p>
+        <div style="background:var(--paper-dim); padding:14px; border-radius:2px; font-family:'JetBrains Mono', monospace; font-size:0.8rem; line-height:1.6; overflow-x:auto;">
+          <p class="muted-light mb-1">Works cited:</p>
+          <p>"Describe the causes of the French Revolution" prompt. <em>ChatGPT</em>, 24 Mar. version, OpenAI, 28 June 2026, chat.openai.com.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="margin-note slate mt-4" style="max-width:600px;">
+      <p class="tag" style="color:var(--slate);">Beyond the reference list</p>
+      <p class="text-sm mt-1 muted">Many courses now also ask for a short methodology note describing <em>how</em> you used AI — e.g. "used to check grammar in the final draft" or "used to generate practice questions during revision." Check your assignment brief for this requirement; it's becoming more common than a plain citation.</p>
+    </div>
+  </main>
+
+  <footer id="siteFooter" class="site-footer"></footer>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/citation-tool.js"></script>
+</body>
+</html>
