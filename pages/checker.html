@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Check Tool — AI Ethics &amp; Literacy Course</title>
+  <meta name="description" content="Paste your writing to get instant feedback on common warning signs before you submit an assignment.">
+  <link rel="canonical" href="https://leletu-kamana.github.io/ai-training-course.github.io/pages/checker.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link font-mono">Skip to main content</a>
+
+  <header class="site-header">
+    <div id="siteNav" class="nav-bar"></div>
+  </header>
+
+  <main id="main" class="wrap" style="padding-top:48px; padding-bottom:64px;">
+    <span class="eyebrow">Before you submit</span>
+    <h1 class="font-display mb-2" style="font-size:2.4rem;">Self-Check Tool</h1>
+    <p class="muted mb-4" style="max-width:600px;">
+      Paste a paragraph of your own writing below. This tool runs entirely in your browser — nothing is
+      uploaded anywhere — and gives you a few simple, honest signals to think about before you submit.
+      It is not a plagiarism checker and it does not detect "AI writing." It just reflects some patterns
+      back at you.
+    </p>
+
+    <div class="checker-box card">
+      <label for="checkerInput" class="tag mb-1" style="display:block;">Paste your paragraph</label>
+      <textarea id="checkerInput" placeholder="Paste a paragraph from your draft here..."></textarea>
+      <div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap; align-items:center;">
+        <button id="checkerBtn" class="btn">Run self-check</button>
+        <button id="checkerClearBtn" class="btn btn-outline">Clear</button>
+        <span class="text-xs muted-light" id="charCount">0 characters</span>
+      </div>
+
+      <div id="checkerResult" class="checker-result"></div>
+      <div id="checkerMeta" class="checker-meta"></div>
+    </div>
+
+    <div class="margin-note slate mt-4" style="max-width:640px;">
+      <p class="tag" style="color:var(--slate);">What this tool can't tell you</p>
+      <p class="text-sm mt-1 muted">It can't tell whether you wrote something or an AI did, and it can't tell whether you've cited AI assistance correctly. Those are judgment calls only you (and your course policy) can make. Use the signals below as prompts for reflection, not a pass/fail grade.</p>
+    </div>
+
+    <h2 class="font-display mt-4 mb-2" style="font-size:1.4rem;">What it actually checks for</h2>
+    <div class="grid-2">
+      <div class="card">
+        <p class="tag mb-1" style="color:var(--flag);">Warning signals</p>
+        <ul style="list-style:disc; padding-left:20px; font-size:0.9rem;" class="muted">
+          <li class="mb-1">No first-person language ("I think", "in my view") anywhere in the text</li>
+          <li class="mb-1">Very uniform sentence length, with little variation</li>
+          <li>Several generic transition phrases stacked close together</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="tag mb-1" style="color:var(--good);">Healthy signals</p>
+        <ul style="list-style:disc; padding-left:20px; font-size:0.9rem;" class="muted">
+          <li class="mb-1">A mix of short and long sentences</li>
+          <li class="mb-1">Specific, concrete details rather than vague generalities</li>
+          <li>Some personal framing or a clear point of view</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer id="siteFooter" class="site-footer"></footer>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/progress.js"></script>
+  <script src="../assets/js/checker.js"></script>
+</body>
+</html>
